@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #16161a;
+  --color-elements: #242629;
+  --color-headline: #fffffe;
+  --color-paragraph: #94a1b2;
+  --color-button: #7f5af0;
+  --color-button-text: #fffffe;
+  --color-highlight: #7f5af0;
+  --color-secondary: #72757e;
+  --color-tertiary: #2cb67d;
+  --color-card: #16161a;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-paragraph;
+  }
+}
+
+@layer utilities {
+  .bg-background {
+    background-color: var(--color-background);
+  }
+  .bg-elements {
+    background-color: var(--color-elements);
+  }
+  .bg-button {
+    background-color: var(--color-button);
+  }
+  .text-headline {
+    color: var(--color-headline);
+  }
+  .text-paragraph {
+    color: var(--color-paragraph);
+  }
+  .text-buttonText {
+    color: var(--color-button-text);
+  }
+  .text-highlight {
+    color: var(--color-highlight);
+  }
+  .bg-highlight {
+    background-color: var(--color-highlight);
+  }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+  .bg-tertiary {
+    background-color: var(--color-tertiary);
+  }
+}
